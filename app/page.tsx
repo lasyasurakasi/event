@@ -9,20 +9,6 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.headerContent}>
             <Link href="/" className={styles.logo}>Event</Link>
-            <nav className={styles.nav}>
-              <a href="#" className={styles.navLink}>
-                Solutions <span className={styles.dropdownArrow}>▼</span>
-              </a>
-              <a href="#" className={styles.navLink}>Enterprise</a>
-              <a href="#" className={styles.navLink}>AI</a>
-              <a href="#" className={styles.navLink}>
-                Developer <span className={styles.dropdownArrow}>▼</span>
-              </a>
-              <a href="#" className={styles.navLink}>
-                Resources <span className={styles.dropdownArrow}>▼</span>
-              </a>
-              <a href="#" className={styles.navLink}>Pricing</a>
-            </nav>
             <div className={styles.headerActions}>
               <Link href="/sign-in" className={styles.signIn}>Sign in</Link>
               <Link href="/sign-up" className={styles.btnGetStarted}>
@@ -65,83 +51,170 @@ export default function Home() {
               <p className={styles.noCredit}>No credit card required</p>
             </div>
 
-            {/* Right Side - Scheduling Widget */}
-            <div className={styles.schedulingWidget}>
-              <div className={styles.widgetContent}>
-                <div className={styles.profileSection}>
-                  <div className={styles.profilePicture}>
-                    <div className={styles.avatar}>CV</div>
-                  </div>
-                  <div className={styles.profileName}>Cédric van Ravesteijn</div>
+            {/* Right Side - Weekly Calendar */}
+            <div className={styles.calendarWidget}>
+              <div className={styles.weeklyCalendar}>
+                {/* Time column header */}
+                <div className={styles.timeColumn}>
+                  <div className={styles.timeHeader}></div>
+                  <div className={styles.timeSlot}>8:00 AM</div>
+                  <div className={styles.timeSlot}>9:00 AM</div>
+                  <div className={styles.timeSlot}>10:00 AM</div>
+                  <div className={styles.timeSlot}>11:00 AM</div>
+                  <div className={styles.timeSlot}>12:00 PM</div>
+                  <div className={styles.timeSlot}>1:00 PM</div>
+                  <div className={styles.timeSlot}>2:00 PM</div>
                 </div>
-                <h2 className={styles.meetingTitle}>Partnerships Meeting</h2>
-                <p className={styles.meetingDescription}>
-                  Are you an agency, influencer, SaaS founder, or business looking to collaborate? Let&apos;s chat!
-                </p>
-                <div className={styles.meetingOptions}>
-                  <div className={styles.durationOptions}>
-                    <button className={`${styles.durationBtn} ${styles.active}`}>15m</button>
-                    <button className={styles.durationBtn}>30m</button>
-                    <button className={styles.durationBtn}>45m</button>
-                    <button className={styles.durationBtn}>1h</button>
+
+                {/* Days columns */}
+                <div className={styles.daysGrid}>
+                  {/* Monday */}
+                  <div className={styles.dayColumn}>
+                    <div className={styles.dayHeader}>Monday</div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                       
+                        <span className={styles.eventTitle}>Monday Wake-Up Hour</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                     
+                        <span className={styles.eventTitle}>All-Team Kickoff</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                       
+                        <span className={styles.eventTitle}>Financial Update</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventPurple}`} style={{ top: '4px', height: '52px' }}>
+                      
+                        <span className={styles.eventTitle}>New Employee Welcome Lunch!</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                       
+                        <span className={styles.eventTitle}>Design Review</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventOrange}`} style={{ top: '4px', height: '52px' }}>
+                     
+                        <span className={styles.eventTitle}>1:1 with Jon</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className={styles.meetingDetails}>
-                    <div className={styles.detailItem}>
-                      <span className={styles.icon}>📹</span>
-                      <span>Video Call</span>
+
+                  {/* Tuesday */}
+                  <div className={styles.dayColumn}>
+                    <div className={styles.dayHeader}>Tuesday</div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '116px' }}>
+                 
+                        <span className={styles.eventTitle}>Design Review: Acme Marketi...</span>
+                      </div>
                     </div>
-                    <div className={styles.detailItem}>
-                      <span className={styles.icon}>🌐</span>
-                      <span>Europe/Amsterdam <span className={styles.dropdownArrow}>▼</span></span>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                    
+                        <span className={styles.eventTitle}>Design System Kickoff Lunch</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                      
+                        <span className={styles.eventTitle}>Concept Design Review II</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className={styles.calendarSection}>
-                  <div className={styles.calendarHeader}>May 2025</div>
-                  <div className={styles.calendarGrid}>
-                    <div className={styles.calendarWeekdays}>
-                      <div>SUN</div>
-                      <div>MON</div>
-                      <div>TUE</div>
-                      <div>WED</div>
-                      <div>THU</div>
-                      <div>FRI</div>
-                      <div>SAT</div>
+
+                  {/* Wednesday */}
+                  <div className={styles.dayColumn}>
+                    <div className={styles.dayHeader}>Wednesday</div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventGreen}`} style={{ top: '4px', height: '52px' }}>
+                     
+                        <span className={styles.eventTitle}>Webinar: Figma ...</span>
+                      </div>
                     </div>
-                    <div className={styles.calendarDays}>
-                      <div className={styles.day}></div>
-                      <div className={styles.day}></div>
-                      <div className={styles.day}>1</div>
-                      <div className={styles.day}>2</div>
-                      <div className={styles.day}>3</div>
-                      <div className={styles.day}>4</div>
-                      <div className={styles.day}>5</div>
-                      <div className={styles.day}>6</div>
-                      <div className={styles.day}>7</div>
-                      <div className={styles.day}>8</div>
-                      <div className={styles.day}>9</div>
-                      <div className={styles.day}>10</div>
-                      <div className={styles.day}>11</div>
-                      <div className={styles.day}>12</div>
-                      <div className={styles.day}>13</div>
-                      <div className={styles.day}>14</div>
-                      <div className={`${styles.day} ${styles.available}`}>15</div>
-                      <div className={`${styles.day} ${styles.available}`}>16</div>
-                      <div className={styles.day}>17</div>
-                      <div className={styles.day}>18</div>
-                      <div className={`${styles.day} ${styles.available}`}>19</div>
-                      <div className={`${styles.day} ${styles.available}`}>20</div>
-                      <div className={`${styles.day} ${styles.available}`}>21</div>
-                      <div className={`${styles.day} ${styles.available}`}>22</div>
-                      <div className={`${styles.day} ${styles.available}`}>23</div>
-                      <div className={styles.day}>24</div>
-                      <div className={styles.day}>25</div>
-                      <div className={`${styles.day} ${styles.available}`}>26</div>
-                      <div className={`${styles.day} ${styles.available}`}>27</div>
-                      <div className={`${styles.day} ${styles.available}`}>28</div>
-                      <div className={`${styles.day} ${styles.available}`}>29</div>
-                      <div className={`${styles.day} ${styles.available}`}>30</div>
-                      <div className={styles.day}>31</div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventPurple}`} style={{ top: '4px', height: '52px' }}>
+                    
+                        <span className={styles.eventTitle}>Onboarding Presentation</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                       
+                        <span className={styles.eventTitle}>MVP Prioritization Workshop</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                  </div>
+
+                  {/* Thursday */}
+                  <div className={styles.dayColumn}>
+                    <div className={styles.dayHeader}>Thursday</div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventGreen}`} style={{ top: '4px', height: '52px' }}>
+                    
+                        <span className={styles.eventTitle}>Coffee Chat</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventPurple}`} style={{ top: '4px', height: '52px' }}>
+                        <span className={styles.eventIcon}>📹</span>
+                        <span className={styles.eventTitle}>Health Benefits Walkthrough</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                    
+                        <span className={styles.eventTitle}>Design Review</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                  </div>
+
+                  {/* Friday */}
+                  <div className={styles.dayColumn}>
+                    <div className={styles.dayHeader}>Friday</div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                     
+                        <span className={styles.eventTitle}>Coffee Chat</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventLightBlue}`} style={{ top: '4px', height: '52px' }}>
+                    
+                        <span className={styles.eventTitle}>Marketing Meet-and-Greet</span>
+                      </div>
+                    </div>
+                    <div className={styles.timeRow}></div>
+                    <div className={styles.timeRow}>
+                      <div className={`${styles.event} ${styles.eventOrange}`} style={{ top: '4px', height: '52px' }}>
+                       
+                        <span className={styles.eventTitle}>1:1 with Heather</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -151,43 +224,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Social Proof Section */}
-      <footer className={styles.socialProof}>
-        <div className={styles.container}>
-          <div className={styles.ratings}>
-            <div className={styles.ratingItem}>
-              <div className={styles.stars}>
-                <span className={`${styles.star} ${styles.filled}`}>★</span>
-                <span className={`${styles.star} ${styles.filled}`}>★</span>
-                <span className={`${styles.star} ${styles.filled}`}>★</span>
-                <span className={`${styles.star} ${styles.filled}`}>★</span>
-                <span className={`${styles.star} ${styles.filled}`}>★</span>
-              </div>
-              <div className={styles.ratingLogo}>Trustpilot</div>
-            </div>
-            <div className={styles.ratingItem}>
-              <div className={styles.stars}>
-                <span className={`${styles.star} ${styles.filled} ${styles.orange}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.orange}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.orange}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.orange}`}>★</span>
-                <span className={styles.star}>★</span>
-              </div>
-              <div className={`${styles.ratingLogo} ${styles.red}`}>P</div>
-            </div>
-            <div className={styles.ratingItem}>
-              <div className={styles.stars}>
-                <span className={`${styles.star} ${styles.filled} ${styles.red}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.red}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.red}`}>★</span>
-                <span className={`${styles.star} ${styles.filled} ${styles.red}`}>★</span>
-                <span className={styles.star}>★</span>
-              </div>
-              <div className={`${styles.ratingLogo} ${styles.red}`}>G</div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </>
   )
 }

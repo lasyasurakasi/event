@@ -28,32 +28,6 @@
   text-decoration: none;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex: 1;
-  justify-content: center;
-}
-
-.navLink {
-  font-size: 0.95rem;
-  color: #4a4a4a;
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  text-decoration: none;
-}
-
-.navLink:hover {
-  color: #1a1a1a;
-}
-
-.dropdownArrow {
-  font-size: 0.7rem;
-  color: #8a8a8a;
-}
 
 .headerActions {
   display: flex;
@@ -271,10 +245,6 @@
 
   .authCard {
     padding: 2rem;
-  }
-
-  .nav {
-    display: none;
   }
 
   .headerActions {
