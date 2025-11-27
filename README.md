@@ -1,6 +1,6 @@
-# Cal.com Landing Page
+# Event Landing Page
 
-A Next.js application replicating the Cal.com landing page design.
+A Next.js application for scheduling and event management.
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Features
 
-- Modern, clean design matching Cal.com's landing page
+- Modern, clean design for scheduling and event management
 - Responsive layout
 - Interactive scheduling widget preview
 - Social proof section with ratings

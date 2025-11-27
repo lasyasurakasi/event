@@ -8,13 +8,13 @@ export default function SignIn() {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.headerContent}>
-            <Link href="/" className={styles.logo}>Cal.com</Link>
+            <Link href="/" className={styles.logo}>Event</Link>
             <nav className={styles.nav}>
               <a href="#" className={styles.navLink}>
                 Solutions <span className={styles.dropdownArrow}>▼</span>
               </a>
               <a href="#" className={styles.navLink}>Enterprise</a>
-              <a href="#" className={styles.navLink}>Cal.ai</a>
+              <a href="#" className={styles.navLink}>AI</a>
               <a href="#" className={styles.navLink}>
                 Developer <span className={styles.dropdownArrow}>▼</span>
               </a>

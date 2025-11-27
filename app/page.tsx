@@ -8,13 +8,13 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.headerContent}>
-            <Link href="/" className={styles.logo}>Cal.com</Link>
+            <Link href="/" className={styles.logo}>Event</Link>
             <nav className={styles.nav}>
               <a href="#" className={styles.navLink}>
                 Solutions <span className={styles.dropdownArrow}>▼</span>
               </a>
               <a href="#" className={styles.navLink}>Enterprise</a>
-              <a href="#" className={styles.navLink}>Cal.ai</a>
+              <a href="#" className={styles.navLink}>AI</a>
               <a href="#" className={styles.navLink}>
                 Developer <span className={styles.dropdownArrow}>▼</span>
               </a>
@@ -40,7 +40,7 @@ export default function Home() {
             {/* Left Side - Product Information */}
             <div className={styles.productInfo}>
               <div className={styles.announcementTag}>
-                Cal.com launches v5.9 <span className={styles.arrow}>→</span>
+                New features available <span className={styles.arrow}>→</span>
               </div>
               <h1 className={styles.headline}>
                 The better way to schedule your meetings
@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
                 <h2 className={styles.meetingTitle}>Partnerships Meeting</h2>
                 <p className={styles.meetingDescription}>
-                  Are you an agency, influencer, SaaS founder, or business looking to collaborate with Cal.com? Let&apos;s chat!
+                  Are you an agency, influencer, SaaS founder, or business looking to collaborate? Let&apos;s chat!
                 </p>
                 <div className={styles.meetingOptions}>
                   <div className={styles.durationOptions}>
@@ -88,7 +88,7 @@ export default function Home() {
                   <div className={styles.meetingDetails}>
                     <div className={styles.detailItem}>
                       <span className={styles.icon}>📹</span>
-                      <span>Cal Video</span>
+                      <span>Video Call</span>
                     </div>
                     <div className={styles.detailItem}>
                       <span className={styles.icon}>🌐</span>
