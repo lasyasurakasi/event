@@ -1,0 +1,323 @@
+/* Header */
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #1a1a1a;
+}
+
+.dropdownArrow {
+  font-size: 0.7rem;
+  color: #8a8a8a;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signIn {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.signIn:hover {
+  color: #1a1a1a;
+}
+
+.btnGetStarted {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btnGetStarted:hover {
+  background-color: #2a2a2a;
+}
+
+.arrow {
+  font-size: 1rem;
+}
+
+/* Main Content */
+.mainContent {
+  padding: 4rem 0;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.authCard {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.authTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.authSubtitle {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btnGoogle {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: background-color 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btnGoogle:hover {
+  background-color: #2a2a2a;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.divider span {
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  color: #8a8a8a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.input {
+  padding: 0.875rem 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1a1a1a;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.input::placeholder {
+  color: #8a8a8a;
+}
+
+.helpText {
+  font-size: 0.75rem;
+  color: #8a8a8a;
+  margin-top: -0.25rem;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: -0.5rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #1a1a1a;
+}
+
+.checkboxLabel {
+  font-size: 0.875rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.link {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #2a2a2a;
+  text-decoration: underline;
+}
+
+.btnSubmit {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  width: 100%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  background-color: #2a2a2a;
+}
+
+.noCredit {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #8a8a8a;
+  margin-top: -0.5rem;
+}
+
+.authFooter {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #4a4a4a;
+  margin-top: 1rem;
+}
+
+.authLink {
+  color: #1a1a1a;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+
+.authLink:hover {
+  color: #2a2a2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .authCard {
+    padding: 2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .headerActions {
+    gap: 0.5rem;
+  }
+
+  .btnGetStarted {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
