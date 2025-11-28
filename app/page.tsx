@@ -176,7 +176,7 @@ export default function Home() {
                     </div>
                     <div className={styles.timeRow}>
                       <div className={`${styles.event} ${styles.eventPurple}`} style={{ top: '4px', height: '52px' }}>
-                        <span className={styles.eventIcon}>📹</span>
+                      
                         <span className={styles.eventTitle}>Health Benefits Walkthrough</span>
                       </div>
                     </div>
